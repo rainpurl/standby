@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">standby+</string>
+
+    <string name="channel_voice_name">Listening</string>
+    <string name="channel_voice_desc">Shown while Superclock is listening for the wake word.</string>
+    <string name="channel_alarm_name">Alarm</string>
+    <string name="channel_alarm_desc">Shown while an alarm is ringing.</string>
+
+    <string name="notif_voice_title">Superclock</string>
+    <string name="notif_voice_text">Listening for “alarm”</string>
+    <string name="notif_alarm_title">Alarm</string>
+
+    <string name="alarm_stop">Stop</string>
+    <string name="alarm_snooze">Snooze 10 min</string>
+
+    <string name="voice_listening">Listening…</string>
+    <string name="voice_unrecognised">Didn\'t catch that</string>
+    <string name="voice_no_alarm">No alarm set</string>
+    <string name="voice_cancelled">Alarm cancelled</string>
+
+    <string name="perm_mic_rationale">Superclock needs the microphone to hear the wake word. Audio never leaves this phone.</string>
+    <string name="preparing_model">Preparing speech model…</string>
+    <string name="alarm_line_format">⏰ %1$02d:%2$02d</string>
+</resources>

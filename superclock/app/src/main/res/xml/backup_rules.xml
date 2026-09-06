@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Only the alarm and the two settings flags are worth carrying to a new phone. Listing
+  them explicitly excludes everything else, which is what we want: the unpacked speech
+  model is ~70 MB and is reproducible from the APK.
+-->
+<full-backup-content>
+    <include domain="sharedpref" path="superclock_alarms.xml" />
+    <include domain="sharedpref" path="superclock_settings.xml" />
+</full-backup-content>

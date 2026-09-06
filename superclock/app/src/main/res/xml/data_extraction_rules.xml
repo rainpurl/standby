@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See backup_rules.xml: an explicit include list is itself the exclusion. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="superclock_alarms.xml" />
+        <include domain="sharedpref" path="superclock_settings.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="superclock_alarms.xml" />
+        <include domain="sharedpref" path="superclock_settings.xml" />
+    </device-transfer>
+</data-extraction-rules>

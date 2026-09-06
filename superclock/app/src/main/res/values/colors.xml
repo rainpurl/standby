@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <!-- Bright-room digit colour. Dim rooms interpolate down toward digit_dim. -->
+    <color name="digit_bright">#FFFFFFFF</color>
+    <color name="digit_dim">#FF2A2A2A</color>
+    <color name="accent">#FF4A9EFF</color>
+</resources>
