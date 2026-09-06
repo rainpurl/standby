@@ -1,0 +1,20 @@
+SIGNING KEY — KEEP PRIVATE. DO NOT PUT THIS FOLDER IN THE GIT REPO.
+
+  superclock-release.jks       the release signing key
+  keystore.properties.example  its passwords, in plaintext
+
+Why it matters: this key is the only thing that lets you ship an UPDATE over an
+already-installed standby+. Android refuses to install an update signed by a
+different key — the user has to uninstall first, losing any set alarm. Lose this
+file and you can never upgrade an installed copy again.
+
+Back it up somewhere private (password manager, encrypted drive). If you ever put
+it in a public repo, anyone could sign an app that Android treats as yours.
+
+To build a signed release, copy keystore.properties.example to the repo root as
+"keystore.properties" and fix the storeFile path to wherever you keep the .jks.
+Without it the build still works and produces app-release-unsigned.apk.
+
+The passwords here are the throwaway ones generated during development
+("superclock"). If this key is going to matter to you long term, generate a fresh
+one with a real password rather than trusting these.
